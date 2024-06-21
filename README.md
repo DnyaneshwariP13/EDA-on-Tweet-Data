@@ -2,21 +2,20 @@
 
 # Twitter Data Analysis
 
-This project performs various analyses on a dataset of 10,000 tweets from January 2020. The analyses include sentiment analysis, text preprocessing, clustering, data visualization, and more. The aim is to gain insights into the sentiments and patterns in the tweets.
+This project performs various analyses on a dataset of 10,000 tweets from January 2020. The analyses include sentiment analysis, text preprocessing, clustering, data visualization, and more. The aim is to gain insights into the sentiments and patterns in the tweets. 
+
 
 ## Table of Contents
 
 1. [Prerequisites](#prerequisites)
-2. [Installation](#installation)
-3. [Dataset](#dataset)
-4. [Data Preprocessing](#data-preprocessing)
-5. [Sentiment Analysis](#sentiment-analysis)
-6. [Clustering](#clustering)
-7. [Data Visualization](#data-visualization)
-8. [Additional Analyses](#additional-analyses)
-9. [Results](#results)
-10. [Contributing](#contributing)
-11. [License](#license)
+2. [Dataset](#dataset)
+3. [Data Preprocessing](#data-preprocessing)
+4. [Sentiment Analysis](#sentiment-analysis)
+5. [Clustering](#clustering)
+6. [Data Visualization](#data-visualization)
+7. [Additional Analyses](#additional-analyses)
+8. [Results](#results)
+
 
 ## Prerequisites
 
@@ -36,31 +35,9 @@ Ensure you have the following packages installed in your Python environment:
 - `seaborn`
 - `plotly`
 
-## Installation
-
-Clone this repository and navigate to the project directory:
-
-```bash
-git clone https://github.com/yourusername/twitter-data-analysis.git
-cd twitter-data-analysis
-```
-
-Install the required packages:
-
-```bash
-pip install -r requirements.txt
-```
-
 ## Dataset
 
-The dataset consists of 10,000 tweets from January 2020. Ensure you have the dataset file named `10ktweetsjan2020.jsonl` in the appropriate directory. The file should contain tweets with the following structure:
-
-```json
-{
-  "full_text": "Your tweet text here",
-  ...
-}
-```
+The dataset consists of 10,000 tweets from January 2020. Ensure you have the dataset file named `10ktweetsjan2020.jsonl` in the appropriate directory. 
 
 ## Data Preprocessing
 
@@ -102,18 +79,66 @@ We further analyze the tweet metadata, including:
 - Analyzing tweet sources.
 - Correlating user attributes with tweet activity.
 
+## Analysis
+
+### Tweet Sources
+
+The analysis determines which applications or platforms were used to post the tweets, such as Twitter for Android or Twitter for iPhone.
+
+### Replied and Quoted Tweets
+
+- **Replied Tweets**: The number of tweets that are replies to other tweets is counted.
+- **Quoted Tweets**: The number of tweets that quote other tweets is counted and a list of these tweets is generated.
+
+### User Statistics
+
+- **Twitter User Account Names**: The screen names of Twitter users along with their followers and friends count are listed.
+- **Account with Highest Number of Followers**: The Twitter account with the highest number of followers is identified.
+
+### Tweet Statistics
+
+- **Most Liked Tweets**: The tweets with the highest number of likes (favorites) are listed.
+- **User Locations**: The locations of Twitter users are identified.
+
+### Sentiment Analysis
+
+- **Segregation of COVID-19 Related Tweets**: Tweets related to COVID-19 are segregated from non-COVID-19 related tweets.
+- **Sentiment Analysis**: Sentiment analysis is performed on both COVID-19 related and non-COVID-19 related tweets using VADER sentiment analysis. The sentiment is categorized as positive, negative, or neutral.
+
+### Word Cloud
+
+- **Word Cloud for All Tweets**: A word cloud is generated for all tweets.
+- **Word Cloud for Non-COVID-19 Tweets**: A word cloud is generated for tweets not related to COVID-19.
+
+### Additional Analysis
+
+- **Most Tweeted Users**: The users who have tweeted the most are listed.
+- **Popular Hashtags**: The most used hashtags are identified and listed.
+- **Average Length of Tweets**: The average length of the tweets is calculated.
+
+
 ## Results
 
 The results of the analyses are displayed as plots and tables within the notebook. Key findings include the distribution of sentiments, the most common n-grams, and patterns in tweet activity over time.
+The analysis will also produce various outputs such as:
 
-## Contributing
+- List of unique applications or platforms used to post tweets.
+- Number of replied and quoted tweets.
+- User statistics including followers and friends count.
+- Most liked tweets.
+- User locations.
+- Sentiment analysis results.
+- Word clouds for tweets.
+- Most tweeted users.
+- Popular hashtags.
+- Average tweet length.
 
-Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
-## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
 
----
 
-Feel free to customize the README further to better suit your project. This template provides a comprehensive overview of the analyses performed and instructions for running the project.
+
+
+
+
+
